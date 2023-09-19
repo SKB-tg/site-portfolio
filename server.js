@@ -15,11 +15,11 @@ const app = express();
 // }
 // function getHtmFiles() {
 // }
-app.use('/static', express.static(path.resolve(__dirname, 'front', 'static')));
-app.use('/images', express.static(path.resolve(__dirname, 'front', 'static', 'images')));
+app.use('/static', express.static(path.resolve(__dirname, 'public', 'static')));
+app.use('/images', express.static(path.resolve(__dirname, 'public', 'static', 'images')));
 
 app.get('/blog-single', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'front', 'static', 'blog_single.html'));
+  res.sendFile(path.resolve(__dirname, 'public', 'static', 'blog_single.html'));
 });
 
 app.get('/*', (req, res) => {
