@@ -14,7 +14,7 @@ Version: 1.2
   --accent-color: #F26649;
   --secondary-color: #F5F3EB;
   --dark-color: #241F21;
-  --grey-color: #CECBC7;
+  --grey-color: #CECCC7;
   --body-text-color: #241F21;
   --light-text-color: #696969;
   --link-color: #241F21;
@@ -37,7 +37,7 @@ body {
   font-size: 19px;
   line-height: 1.6em;
   color: var(--body-text-color);
-  background-color: var(--secondary-color);
+  background-color: var(--grey-color);
 }
 
 h1,
@@ -219,7 +219,7 @@ ul.nav.nav-pills {
   background: #FFFFFF;
   display: grid;
   border-radius: 60px;
-  width: 119px;
+  width: 90px;
 }
 
 .nav-pills .nav-link.active,
@@ -234,11 +234,11 @@ ul.nav.nav-pills {
 
 .nav a.nav-link {
   font-size: 34px;
-  padding: 23px 0;
+  padding: 10px 0;
 }
 
 .nav {
-  padding: 38px 0;
+  padding: 16px 0;
   --bs-nav-link-hover-color: var(--accent-color);
   --bs-nav-link-active-color: var(--accent-color);
 
@@ -257,12 +257,17 @@ ul.nav.nav-pills {
   color: var(--secondary-color);
   background-color: var(--light-text-color) !important;
 }
-
+@media only screen and (max-width: 1400px) {
+  section.navigation {
+    top: 12px;
+  }
+}
 
 @media only screen and (max-width: 1200px) {
 
   section.navigation {
     z-index: 99999;
+
   }
 
   ul.nav.text-center {
@@ -348,7 +353,7 @@ header.position-fixed {
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
 
   .offcanvas-btn {
     display: block;
@@ -368,7 +373,7 @@ section#home {
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
 
   section#home {
     padding: 230px 0px;
